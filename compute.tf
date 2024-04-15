@@ -41,8 +41,8 @@ resource "null_resource" "docker-compose" {
   }
 
   provisioner "file" {
-    source      = "./docker-compose.yml"            # yerel Docker Compose dosyasının yolu
-    destination = "/home/ubuntu/docker-compose.yml" # EC2 örneğine kopyalanacak yol
+    source      = "./docker-compose.yml"            # local Docker Compose dosyasının path
+    destination = "/home/ubuntu/docker-compose.yml" # EC2 da kopyalanacak path
   }
 
   provisioner "remote-exec" {
