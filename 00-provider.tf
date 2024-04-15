@@ -22,7 +22,6 @@ terraform {
 
 provider "aws" {
   region  = "eu-north-1"
-  profile = "devopsdude"
 }
 
 provider "tls" {
